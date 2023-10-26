@@ -27,9 +27,13 @@
       }
 
       /* Add your CSS styles here */
-      
-      @media (max-width: 600px) {
-        .flow {
+
+      h2 {
+          color: pink;
+          text-shadow: #555 1px 1px 3px;
+        }
+
+      .flow {
           border: black solid 2px;  
           background-color: rgb(255, 255, 201);
           
@@ -37,17 +41,20 @@
           flex-direction: row;
         }
 
-        h2 {
-          color: pink;
-          text-shadow: #555 1px 1px 3px;
-        }
-
         section {
           flex: 1;
           margin-right: 1em;
         }
-      }
+      
+      @media screen and (max-width: 600px) {
+        .flow {
+          flex-direction: column;
+        }
 
+        section {
+          margin-right: 0;
+        }
+      }
 
     </style>
   </head>
